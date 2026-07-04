@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+echo 'Communicating through Pico BOOTSEL USB requires sudo'
+sudo picotool load --update --verify --execute -t elf "$@"
